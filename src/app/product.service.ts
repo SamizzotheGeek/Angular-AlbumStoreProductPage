@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import {Http} from '@angular/http';
-import {Response} from '@angular/http';
+import {Http, Response} from '@angular/http';
+
 
 @Injectable()
 export class ProductService {
@@ -9,7 +9,7 @@ export class ProductService {
     
    }
    getAlbum(id:number){
-     return this._http.get(_albumUrl)
+     return this._http.get(this._albumUrl)
    }
   
 
